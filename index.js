@@ -34,7 +34,8 @@ bot.on("message", data => {
 
 // Respond to Data
 function handleMessage(message) {
-  if (message.includes(" kevinhubert")) {
+  const lowerCaseMessage = message.toLowerCase();
+  if (lowerCaseMessage.includes(" kevinhubert")) {
     chuckJoke();
   }
 }
