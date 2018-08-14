@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    const arrJoke = [
+      'Chuck',
+      'Norris',
+      'uses',
+      'a',
+      'night',
+      'light.',
+      'Not',
+      'because',
+      'Chuck',
+      'Norris',
+      'is',
+      'afraid',
+      'of',
+      'the',
+      'dark,',
+      'but',
+      'the',
+      'dark',
+      'is',
+      'afraid',
+      'of',
+      'Chuck',
+      'Norris.']
+
+    const replaceNames = arrJoke.map(item => {
+      if (item === 'Chuck') {
+        return 'Kevin'
+      } else if (item === 'Norris') {
+        return 'Hubert'
+      }
+      return item;
+    });
+
+    console.log(replaceNames);
+
+
+  </script>
+</body>
+
+</html>
